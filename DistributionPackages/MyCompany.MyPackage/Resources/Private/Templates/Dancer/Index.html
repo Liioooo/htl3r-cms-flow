@@ -1,0 +1,36 @@
+<f:layout name="Default"/>
+
+<f:section name="Title">Dancers</f:section>
+
+<f:section name="MainContent">
+    <h1>List of Dancers</h1>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Information</th>
+                <th scope="col">Country</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <f:for as="dancer" each="{dancers}" iteration="iterator">
+                <tr>
+                    <td>{iterator.index + 1}</td>
+                    <td>{dancer.name}</td>
+                    <td>{dancer.information}</td>
+                    <td>{dancer.country.name}</td>
+                    <td>
+                        <f:form action="delete" arguments="{dancer: dancer}">
+                            <f:form.submit name="delete" value="Delete" class="btn btn-dark" />
+                        </f:form>
+                    </td>
+                </tr>
+            </f:for>
+        </tbody>
+    </table>
+    <div class="d-flex justify-content-center">
+        <f:link.action action="addForm" class="btn btn-dark w-50">Add Dancer</f:link.action>
+    </div>
+</f:section>

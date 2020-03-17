@@ -1,0 +1,14 @@
+-
+  name: 'dancer'
+  uriPattern: '({@controller}/{@action})'
+  defaults:
+    '@controller': 'Dancer'
+    '@action':     'index'
+    '@format':     'html'
+-
+  name: 'about'
+  uriPattern: 'about'
+  defaults:
+    '@controller': 'About'
+    '@action':     'index'
+    '@format':     'html'

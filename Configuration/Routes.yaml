@@ -1,0 +1,12 @@
+##
+# My subroutes
+
+-
+  name: 'Dancer'
+  uriPattern: '<DancerSubroutes>'
+  defaults:
+    '@package': 'MyCompany.MyPackage'
+    '@format':  'html'
+  subRoutes:
+    'DancerSubroutes':
+      package: 'MyCompany.MyPackage'

@@ -1,0 +1,29 @@
+Neos:
+  Flow:
+    persistence:
+      backendOptions:
+        driver: 'pdo_mysql'
+        charset: 'utf8mb4'
+        host: 'db'
+        user: 'db'
+        password: 'db'
+        dbname: 'db'
+
+    mvc:
+      routes:
+        'Neos.Flow': true
+
+    error:
+      exceptionHandler:
+
+        defaultRenderingOptions:
+          viewClassName: Neos\FluidAdaptor\View\StandaloneView
+
+        renderingGroups:
+          notFoundExceptions:
+            matchingStatusCodes: [404]
+            options:
+              templatePathAndFilename: 'resource://MyCompany.MyPackage/Private/Templates/Error/NotFoundException.html'
+              layoutRootPath: 'resource://MyCompany.MyPackage/Private/Layouts'
+              partialRootPath: 'resource://MyCompany.MyPackage/Private/Partials'
+
