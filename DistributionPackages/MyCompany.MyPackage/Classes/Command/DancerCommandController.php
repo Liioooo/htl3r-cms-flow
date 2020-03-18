@@ -56,8 +56,6 @@ class DancerCommandController extends CommandController
             if ($c->getName() === $selectedCountryName) $selectedCountry = $c;
         }
 
-        Arrays::
-
         $dancer = new Dancer();
         $dancer->setName($name);
         $dancer->setInformation($information);
