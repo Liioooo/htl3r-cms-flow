@@ -12,6 +12,7 @@
                 <th scope="col">Information</th>
                 <th scope="col">Country</th>
                 <th scope="col">Delete</th>
+                <th scope="col">Edit</th>
             </tr>
         </thead>
         <tbody>
@@ -25,6 +26,11 @@
                         <f:form action="delete" arguments="{dancer: dancer}">
                             <f:form.submit name="delete" value="Delete" class="btn btn-dark" />
                         </f:form>
+                    </td>
+                    <td>
+                        <f:link.action action="editForm" arguments="{dancer: dancer}">
+                            <button class="btn btn-dark">Edit</button>
+                        </f:link.action>
                     </td>
                 </tr>
             </f:for>

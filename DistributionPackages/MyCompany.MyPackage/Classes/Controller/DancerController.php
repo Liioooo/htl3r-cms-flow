@@ -47,6 +47,27 @@ class DancerController extends ActionController
 
     /**
      * @return void
+     * @param Dancer dancer
+     */
+    public function editFormAction(Dancer $dancer)
+    {
+        $countries = $this->countryRepository->findAll();
+        $this->view->assign('countries', $countries);
+        $this->view->assign('dancer', $dancer);
+    }
+
+    /**
+     * @return void
+     * @param Dancer $dancer
+     */
+    public function updateAction(Dancer $dancer)
+    {
+        $this->dancerRepository->update($dancer);
+        $this->redirect('index');
+    }
+
+    /**
+     * @return void
      */
     public function addFormAction()
     {

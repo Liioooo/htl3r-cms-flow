@@ -1,0 +1,35 @@
+<f:layout name="Default" />
+
+<f:section name="Title">Dancers</f:section>
+
+<f:section name="MainContent">
+    <h1>Edit Dancer</h1>
+
+    <f:form action="update" object="{dancer}" objectName="dancer">
+
+        <div class="form-group">
+            <label for="dancer-name">Name</label>
+            <f:form.textfield property="name" id="dancer-name" class="form-control" errorClass="is-invalid" />
+            <div class="invalid-feedback">
+                Invalid Name
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="dancer-information">Information</label>
+            <f:form.textfield property="information" id="dancer-information" class="form-control" errorClass="is-invalid" />
+            <div class="invalid-feedback">
+                Invalid Information
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="dancer-country">Country</label>
+            <f:form.select name="dancer-country" property="country" options="{countries}" optionLabelField="name" class="form-control" />
+        </div>
+
+
+        <f:form.submit name="submit" value="Update Dancer" class="btn btn-dark" />
+    </f:form>
+</f:section>
+
