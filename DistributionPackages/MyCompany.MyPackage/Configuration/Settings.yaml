@@ -1,0 +1,9 @@
+Neos:
+  Flow:
+    http:
+      chain:
+        'process':
+          chain:
+            'languageDetection':
+              position: 'before routing'
+              component: 'MyCompany\MyPackage\Http\LanguageDetectionComponent'

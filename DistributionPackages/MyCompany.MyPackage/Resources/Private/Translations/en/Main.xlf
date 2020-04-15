@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="MyCompany.MyPackage" source-language="en" datatype="plaintext">
+		<body>
+			<trans-unit id="navbar.title" xml:space="preserve">
+        		<source>Dancers</source>
+        	</trans-unit>
+        	<trans-unit id="navbar.home" xml:space="preserve">
+            	<source>Home</source>
+            </trans-unit>
+            <trans-unit id="navbar.about" xml:space="preserve">
+                <source>About</source>
+            </trans-unit>
+
+			<trans-unit id="list.headline" xml:space="preserve">
+				<source>List of Dancers</source>
+			</trans-unit>
+			<trans-unit id="list.table.name" xml:space="preserve">
+            	<source>Name</source>
+            </trans-unit>
+            <trans-unit id="list.table.information" xml:space="preserve">
+                <source>Information</source>
+            </trans-unit>
+            <trans-unit id="list.table.country" xml:space="preserve">
+                <source>Country</source>
+            </trans-unit>
+            <trans-unit id="list.table.delete" xml:space="preserve">
+                <source>Delete</source>
+            </trans-unit>
+            <trans-unit id="list.table.edit" xml:space="preserve">
+                <source>Edit</source>
+            </trans-unit>
+            <trans-unit id="list.addDancer" xml:space="preserve">
+                <source>Add Dancer</source>
+            </trans-unit>
+
+            <trans-unit id="newDancer.headline" xml:space="preserve">
+                <source>Add new Dancer</source>
+            </trans-unit>
+            <trans-unit id="newDancer.name" xml:space="preserve">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="newDancer.information" xml:space="preserve">
+                <source>Information</source>
+            </trans-unit>
+            <trans-unit id="newDancer.country" xml:space="preserve">
+                <source>Country</source>
+            </trans-unit>
+            <trans-unit id="newDancer.add" xml:space="preserve">
+                <source>Add Dancer</source>
+            </trans-unit>
+
+            <trans-unit id="editDancer.headline" xml:space="preserve">
+                <source>Edit Dancer</source>
+            </trans-unit>
+            <trans-unit id="editDancer.name" xml:space="preserve">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="editDancer.information" xml:space="preserve">
+                <source>Information</source>
+            </trans-unit>
+            <trans-unit id="editDancer.country" xml:space="preserve">
+                <source>Country</source>
+            </trans-unit>
+            <trans-unit id="editDancer.update" xml:space="preserve">
+                <source>Update Dancer</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

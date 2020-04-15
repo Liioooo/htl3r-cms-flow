@@ -3,12 +3,12 @@
 <f:section name="Title">Dancers</f:section>
 
 <f:section name="MainContent">
-    <h1>Add new Dancer</h1>
+    <h1>{f:translate(id: 'newDancer.headline')}</h1>
 
     <f:form action="create" objectName="newDancer">
 
         <div class="form-group">
-            <label for="dancer-name">Name</label>
+            <label for="dancer-name">{f:translate(id: 'newDancer.name')}</label>
             <f:form.textfield property="name" id="dancer-name" class="form-control" errorClass="is-invalid" />
             <div class="invalid-feedback">
                 Invalid Name
@@ -16,7 +16,7 @@
         </div>
 
         <div class="form-group">
-            <label for="dancer-information">Information</label>
+            <label for="dancer-information">{f:translate(id: 'newDancer.information')}</label>
             <f:form.textfield property="information" id="dancer-information" class="form-control" errorClass="is-invalid" />
             <div class="invalid-feedback">
                 Invalid Information
@@ -24,11 +24,11 @@
         </div>
 
         <div class="form-group">
-            <label for="dancer-country">Country</label>
+            <label for="dancer-country">{f:translate(id: 'newDancer.country')}</label>
             <f:form.select name="dancer-country" property="country" options="{countries}" optionLabelField="name" class="form-control" />
         </div>
 
 
-        <f:form.submit name="submit" value="Add Dancer" class="btn btn-dark" />
+        <f:form.submit name="submit" value="{f:translate(id: 'newDancer.add')}" class="btn btn-dark" />
     </f:form>
 </f:section>

@@ -3,16 +3,16 @@
 <f:section name="Title">Dancers</f:section>
 
 <f:section name="MainContent">
-    <h1>List of Dancers</h1>
+    <h1>{f:translate(id: 'list.headline')}</h1>
     <table class="table">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Information</th>
-                <th scope="col">Country</th>
-                <th scope="col">Delete</th>
-                <th scope="col">Edit</th>
+                <th scope="col">{f:translate(id: 'list.table.name')}</th>
+                <th scope="col">{f:translate(id: 'list.table.information')}</th>
+                <th scope="col">{f:translate(id: 'list.table.country')}</th>
+                <th scope="col">{f:translate(id: 'list.table.delete')}</th>
+                <th scope="col">{f:translate(id: 'list.table.edit')}</th>
             </tr>
         </thead>
         <tbody>
@@ -24,12 +24,12 @@
                     <td>{dancer.country.name}</td>
                     <td>
                         <f:form action="delete" arguments="{dancer: dancer}">
-                            <f:form.submit name="delete" value="Delete" class="btn btn-dark" />
+                            <f:form.submit name="delete" value="{f:translate(id: 'list.table.delete')}" class="btn btn-dark" />
                         </f:form>
                     </td>
                     <td>
                         <f:link.action action="editForm" arguments="{dancer: dancer}">
-                            <button class="btn btn-dark">Edit</button>
+                            <button class="btn btn-dark">{f:translate(id: 'list.table.edit')}</button>
                         </f:link.action>
                     </td>
                 </tr>
@@ -37,6 +37,6 @@
         </tbody>
     </table>
     <div class="d-flex justify-content-center">
-        <f:link.action action="addForm" class="btn btn-dark w-50">Add Dancer</f:link.action>
+        <f:link.action action="addForm" class="btn btn-dark w-50">{f:translate(id: 'list.addDancer')}</f:link.action>
     </div>
 </f:section>

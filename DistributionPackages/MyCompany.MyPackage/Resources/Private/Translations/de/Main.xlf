@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="MyCompany.MyPackage" source-language="en" target-language="de" datatype="plaintext">
+		<body>
+			<trans-unit id="navbar.title" xml:space="preserve">
+            	<source>Dancers</source>
+            	<target>Tänzer</target>
+            </trans-unit>
+            <trans-unit id="navbar.home" xml:space="preserve">
+            	<source>Home</source>
+            	<target>Home</target>
+            </trans-unit>
+            <trans-unit id="navbar.about" xml:space="preserve">
+                <source>About</source>
+                <target>Über uns</target>
+            </trans-unit>
+
+			<trans-unit id="list.headline" xml:space="preserve">
+        		<source>List of Dancers</source>
+        		<target>Liste aller Tänzer</target>
+        	</trans-unit>
+        	<trans-unit id="list.table.name" xml:space="preserve">
+            	<source>Name</source>
+            	<target>Name</target>
+            </trans-unit>
+            <trans-unit id="list.table.information" xml:space="preserve">
+                <source>Information</source>
+                 <target>Information</target>
+            </trans-unit>
+            <trans-unit id="list.table.country" xml:space="preserve">
+                <source>Country</source>
+                <target>Land</target>
+            </trans-unit>
+            <trans-unit id="list.table.delete" xml:space="preserve">
+                <source>Delete</source>
+                <target>Löschen</target>
+            </trans-unit>
+            <trans-unit id="list.table.edit" xml:space="preserve">
+                <source>Edit</source>
+                 <target>Bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="list.addDancer" xml:space="preserve">
+                <source>Add Dancer</source>
+                <target>Tänzer hinzufügen</target>
+            </trans-unit>
+
+            <trans-unit id="newDancer.headline" xml:space="preserve">
+                <source>Add new Dancer</source>
+                <target>Neuen Tänzer hinzufügen</target>
+            </trans-unit>
+            <trans-unit id="newDancer.name" xml:space="preserve">
+                <source>Name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="newDancer.information" xml:space="preserve">
+                <source>Information</source>
+                <target>Information</target>
+            </trans-unit>
+            <trans-unit id="newDancer.country" xml:space="preserve">
+                <source>Country</source>
+                <target>Land</target>
+            </trans-unit>
+            <trans-unit id="newDancer.add" xml:space="preserve">
+                <source>Add Dancer</source>
+                <target>Tänzer hinzufügen</target>
+            </trans-unit>
+
+            <trans-unit id="editDancer.headline" xml:space="preserve">
+                <source>Edit Dancer</source>
+                <target>Tänzer Bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="editDancer.name" xml:space="preserve">
+                <source>Name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="editDancer.information" xml:space="preserve">
+                <source>Information</source>
+                <target>Information</target>
+            </trans-unit>
+            <trans-unit id="editDancer.country" xml:space="preserve">
+                <source>Country</source>
+                <target>Land</target>
+            </trans-unit>
+            <trans-unit id="editDancer.update" xml:space="preserve">
+                <source>Update Dancer</source>
+                <target>Tänzer aktualisieren</target>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>
