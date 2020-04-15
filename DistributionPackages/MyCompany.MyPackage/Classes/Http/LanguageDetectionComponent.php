@@ -22,8 +22,11 @@ class LanguageDetectionComponent implements ComponentInterface
 
     public function handle(ComponentContext $componentContext)
     {
-        $locale = new Locale('en');
-        $this->localizationService->getConfiguration()->setCurrentLocale($locale);
+        $queryParams = $componentContext->getHttpRequest()->getQueryParams();
+        if (isset($queryParams['lang'])) {
+            $locale = new Locale($queryParams['lang']);
+            $this->localizationService->getConfiguration()->setCurrentLocale($locale);
+        }
     }
 
 }
