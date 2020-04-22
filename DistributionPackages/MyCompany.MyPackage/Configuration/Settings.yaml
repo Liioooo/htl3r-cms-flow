@@ -5,7 +5,7 @@ Neos:
         'process':
           chain:
             'languageDetection':
-              position: 'before routing'
+              position: 'after routing'
               component: 'MyCompany\MyPackage\Http\LanguageDetectionComponent'
     i18n:
       defaultLocale: en

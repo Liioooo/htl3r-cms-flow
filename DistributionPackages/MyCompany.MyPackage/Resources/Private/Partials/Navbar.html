@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">{f:translate(id: 'navbar.title')}</a>
+    <f:link.action action="index" controller="Dancer" class="navbar-brand">{f:translate(id: 'navbar.home')}</f:link.action>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li>
-                <a class="nav-link" href="/">{f:translate(id: 'navbar.home')}</span></a>
+                <f:link.action action="index" controller="Dancer" class="nav-link">{f:translate(id: 'navbar.home')}</f:link.action>
             </li>
             <li>
-                <a class="nav-link" href="/about">{f:translate(id: 'navbar.about')}</span></a>
+                <f:link.action action="index" controller="About" class="nav-link">{f:translate(id: 'navbar.about')}</f:link.action>
             </li>
         </ul>
     </div>

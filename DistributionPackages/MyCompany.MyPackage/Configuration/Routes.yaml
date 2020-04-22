@@ -1,14 +1,16 @@
 -
   name: 'dancer'
-  uriPattern: '({@controller}/{@action})'
+  uriPattern: '{locale}/{@controller}(/{@action})'
   defaults:
+    'locale': 'en'
     '@controller': 'Dancer'
     '@action':     'index'
     '@format':     'html'
 -
   name: 'about'
-  uriPattern: 'about'
+  uriPattern: '{locale}/about'
   defaults:
+    'locale': 'en'
     '@controller': 'About'
     '@action':     'index'
     '@format':     'html'
