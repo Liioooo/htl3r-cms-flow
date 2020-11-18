@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c282a9d21d932c82e19a73d518830e1",
+    "content-hash": "6985352af726ff9bf117631185dcb47c",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1279,6 +1279,7 @@
                 "reflection",
                 "static"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2020-01-08T19:53:19+00:00"
         },
         {
@@ -1424,7 +1425,7 @@
             "dist": {
                 "type": "path",
                 "url": "./DistributionPackages/MyCompany.MyPackage",
-                "reference": "86b25a585a77fd7df117d814325cda7945fa8334"
+                "reference": "88758a27118c9fd38a98502a0064ee497ce57a3a"
             },
             "require": {
                 "neos/flow": "*"
@@ -1439,6 +1440,9 @@
                 "psr-4": {
                     "MyCompany\\MyPackage\\": "Classes/"
                 }
+            },
+            "transport-options": {
+                "relative": true
             }
         },
         {
@@ -2116,39 +2120,6 @@
             "description": "Flow Unicode Utilities",
             "homepage": "http://flow.neos.io",
             "time": "2019-09-14T14:22:43+00:00"
-        },
-        {
-            "name": "neos/welcome",
-            "version": "6.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/neos/flow-welcome.git",
-                "reference": "87e969be049c4c897e6cdb3a8f35b8dfd4ddeecf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/neos/flow-welcome/zipball/87e969be049c4c897e6cdb3a8f35b8dfd4ddeecf",
-                "reference": "87e969be049c4c897e6cdb3a8f35b8dfd4ddeecf",
-                "shasum": ""
-            },
-            "require": {
-                "neos/flow": "^6.1"
-            },
-            "replace": {
-                "typo3/welcome": "self.version"
-            },
-            "type": "neos-package",
-            "autoload": {
-                "psr-4": {
-                    "Neos\\Welcome\\": "Classes"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "This package provides a start screen for the Flow framework with links to online resources.",
-            "time": "2019-12-04T16:05:40+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -3406,16 +3377,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "2.6.9",
+            "version": "2.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "ba05e165bb4fd1302edf3f0280a149992e8c79be"
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/ba05e165bb4fd1302edf3f0280a149992e8c79be",
-                "reference": "ba05e165bb4fd1302edf3f0280a149992e8c79be",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
                 "shasum": ""
             },
             "require": {
@@ -3441,7 +3412,7 @@
                 "LGPL-3.0-or-later"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2020-02-03T10:46:43+00:00"
+            "time": "2020-11-16T21:38:14+00:00"
         },
         {
             "name": "zendframework/zend-code",
@@ -3789,6 +3760,39 @@
             ],
             "description": "A simple generator for controller and views.",
             "time": "2019-12-04T15:50:48+00:00"
+        },
+        {
+            "name": "neos/welcome",
+            "version": "6.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neos/flow-welcome.git",
+                "reference": "87e969be049c4c897e6cdb3a8f35b8dfd4ddeecf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neos/flow-welcome/zipball/87e969be049c4c897e6cdb3a8f35b8dfd4ddeecf",
+                "reference": "87e969be049c4c897e6cdb3a8f35b8dfd4ddeecf",
+                "shasum": ""
+            },
+            "require": {
+                "neos/flow": "^6.1"
+            },
+            "replace": {
+                "typo3/welcome": "self.version"
+            },
+            "type": "neos-package",
+            "autoload": {
+                "psr-4": {
+                    "Neos\\Welcome\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "This package provides a start screen for the Flow framework with links to online resources.",
+            "time": "2019-12-04T16:05:40+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -4357,6 +4361,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -5155,5 +5160,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
